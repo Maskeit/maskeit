@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  /* flex-grow: 1; */
 }
 
 .App-logo {
@@ -37,46 +38,52 @@
   }
 }
 
-
 .navbar {
-  /* position: sticky;
-  top: 0; */
+  flex-wrap: wrap;
   padding-right: 25px;
   display: flex;
   justify-content: right;
   min-height: 12vh;
   align-items: center;
-  background-color: #17636d;
+  background-color: #ffffff;
   overflow: hidden;
 }
-.nav-links {
-  float: right;
+
+
+.hero {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
-
-::before,
-::after{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.content-container {
+  display: left;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
 }
 
-.nav-links button {
-  position: relative;
-  padding: 0.75em 1.5em;
-  color: #ffffff;
-  font-size: 1rem;
-  border-radius: 100vmax;
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  text-transform: uppercase;
-  overflow: hidden;
-  cursor: pointer;
-  margin-left: 15px;
+.img-container {
+  order: 1; /* Cambia el orden para colocar CircularImg en la izquierda */
 }
 
-.nav-links button:hover {
-  background-color: #b4a7b971;
+.information {
+  margin-top: 20px;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .content-container {
+    align-items: center;
+  }
+
+  .img-container {
+    order: 2; /* Cambia el orden para colocar CircularImg después de la información */
+  }
 }
