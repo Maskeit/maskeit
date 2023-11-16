@@ -11,7 +11,8 @@ import {
 export const CircularImg = () => {
     return (
       <img
-        className="h-96 w-96 rounded-full object-cover object-center"
+        // className="h-96 w-96 rounded-full object-cover object-center"
+        className="h-48 w-48 md:h-72 md:w-72 rounded-full object-cover object-center"
         src={myImage}
         alt="Miguel Image"
       />
@@ -35,10 +36,18 @@ export const CardHero  = () => {
 export const Hero = () => {
   return (
     <div className="hero">
-      <div className="content-container">
-        <div className="img-container">
+      <div className="name-img">
+      <div className="image-container">
+        {/* <div className="img-container">
           <CircularImg />
-        </div>
+        </div> */}
+      </div>
+        <Typography variant="h5" color="blue">
+          Miguel Alejandre
+        </Typography>
+      </div>
+
+
         <div className="information">
           <Typography variant="h2" color="blue">
             Forward-Thinking Software Developer | Innovator in Web, Desktop, Mobile and AI Solutions
@@ -48,7 +57,6 @@ export const Hero = () => {
             I have experience in the design and development of web and desktop applications, as well as the creation of 3D models.
           </Typography>
         </div>
-      </div>
     </div>
   )
 }

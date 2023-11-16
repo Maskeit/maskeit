@@ -13,11 +13,11 @@ export const Header = () => {
   React.useEffect(() => {
     window.addEventListener(
       "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false),
+      () => window.innerWidth >= 800 && setOpenNav(false),
     );
   }, []);
 
-  const myData = {Iam : "I am", AboutMe : "About me", Projects : "Projects", Contact : "Contact" };
+  const myData = {Iam : "Yo", AboutMe : "Sobre mi", Projects : "Proyectos", Contact : "Contacto" };
   const navList =(
     <ul className="mt-2 mb-4 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-4">    
       <Buttons fullWidth variant="text" size="sm" prop={myData.Iam}/>
