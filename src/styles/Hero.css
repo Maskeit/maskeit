@@ -1,0 +1,108 @@
+/* Cyan Colors
+ */
+ :root{
+    --mosque-50: #eefffc;
+    --mosque-75:#b6dad9;
+    --mosque-80:#9dcdcc;
+    --mosque-100: #c6fff6;
+    --mosque-200: #8effef;
+    --mosque-250:#85c1bf;
+    --mosque-300: #4dfbe5;
+    --mosque-350:#6cb5b2;
+    --mosque-375:#54a8a5;
+    --mosque-400: #19e8d5;
+    --mosque-500: #01cbbc;
+    --mosque-550:#3b9c99;
+    --mosque-575:#238f8c;
+    --mosque-600: #00a49b;
+    --mosque-700: #03827c;
+    --mosque-800: #086966;
+    --mosque-900: #0c5552;
+    --mosque-950: #003334;
+  }
+
+.Hero{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 89vh;
+}
+
+.name-img{
+    display: center;
+}
+  /***/
+.rotating-text-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-attachment: scroll;
+}
+  
+.rotating-text-wrapper h2 {
+    font-size: 2em;
+    margin: 0;
+    border-radius: 10px;
+    padding: 0.3em;
+    background: linear-gradient(to right, var(--mosque-300)
+    ,var(--mosque-550)
+    ,var(--mosque-575)
+    ,var(--mosque-600)
+    ,var(--mosque-700)
+    ,var(--mosque-800)
+    ,var(--mosque-900) );
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+}
+  
+  .rotating-text-wrapper h2:nth-child(1) {
+    background-color: transparent;
+    animation-name: rotating-text-1;
+    animation-duration: 4s;
+  }
+  
+  @keyframes rotating-text-1 {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    33% {
+      opacity: 1;
+    }
+    66% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+  }
+  /* @media screen and (max-width: 800px) {
+    .rotating-text-wrapper {
+      font-size: 1.3rem;
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .rotating-text-wrapper {
+      font-size: 1rem;
+    }
+  }
+   */
+  /**/
+  .information {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  @media (max-width: 800px) {
+    .hero {
+      flex-direction: start;
+    }
+  
+    .content-container {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  

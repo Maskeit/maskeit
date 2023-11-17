@@ -1,0 +1,155 @@
+/* Cyan Colors
+ */
+ :root{
+    --mosque-50: #eefffc;
+    --mosque-75:#b6dad9;
+    --mosque-80:#9dcdcc;
+    --mosque-100: #c6fff6;
+    --mosque-200: #8effef;
+    --mosque-250:#85c1bf;
+    --mosque-300: #4dfbe5;
+    --mosque-350:#6cb5b2;
+    --mosque-375:#54a8a5;
+    --mosque-400: #19e8d5;
+    --mosque-500: #01cbbc;
+    --mosque-550:#3b9c99;
+    --mosque-575:#238f8c;
+    --mosque-600: #00a49b;
+    --mosque-700: #03827c;
+    --mosque-800: #086966;
+    --mosque-900: #0c5552;
+    --mosque-950: #003334;
+  }
+
+.Aboutme{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobremi {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+  
+.sobremi h1 {
+    font-size: 2em;
+    background: linear-gradient(var(--mosque-300)
+    ,var(--mosque-550)
+    ,var(--mosque-575)
+    ,var(--mosque-600)
+    ,var(--mosque-700)
+    ,var(--mosque-800)
+    ,var(--mosque-900) );
+    -webkit-background-clip: text;  
+    color: transparent; /* Hacer el texto transparente para que se muestre el degradado de fondo */
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+  
+
+h2 {
+font-size: 1.6rem;
+font-weight: bold;
+margin-top: 1em;
+}
+
+.empty-space {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    max-width: 100ch;
+    line-height: 1.5;
+    color: var(--mosque-950);
+    /* display: flex; */
+    /* align-items: center; */
+    padding: 5rem;
+}
+
+.scroll {
+    height: 40em;
+    background-image:url(../images/sky1.JPG);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    flex-direction: row;
+    gap: 1.6em;
+    border-radius: 10px;
+}
+
+.content {
+display: flex;
+max-width: 360px;
+background-color: #fffaf2;
+flex-direction: column;
+align-items: center;
+border-radius: 0.5rem;
+background-color: #d6d5d541;
+backdrop-filter: blur(5px);
+box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.text {
+font-size: 1.2rem;
+padding: 0.3rem 0.8rem;
+}
+
+a {
+display: inline-block;
+padding: 0.6rem 1rem;
+background-color: #7d1c25;
+color: white;
+border-radius: 0.2rem;
+font-size: .8em;
+font-weight: bold;
+letter-spacing: .5px;
+text-decoration: none;
+}
+
+.img {
+width: 18rem;
+height: 20rem;
+margin-top: 20px;
+border-radius: 0.3rem;;
+background-color: lightgrey;
+background-size: cover;
+background-position: center;
+}
+
+.image-one {
+background-image: url(../images/bass2.JPG);
+}
+
+.image-two {
+background-image: url(../images/tabasco.JPG);
+}
+
+.card{
+    width: 25rem;
+    padding-bottom: 15px;
+    
+}
+
+.card > a {
+    margin-bottom: 1.5rem;
+}
+
+
+.blank {
+width: 100%;
+min-height: 50vh;
+}
+

@@ -1,0 +1,102 @@
+/* Cyan Colors
+ */
+ :root{
+    --mosque-50: #eefffc;
+    --mosque-75:#b6dad9;
+    --mosque-80:#9dcdcc;
+    --mosque-100: #c6fff6;
+    --mosque-200: #8effef;
+    --mosque-250:#85c1bf;
+    --mosque-300: #4dfbe5;
+    --mosque-350:#6cb5b2;
+    --mosque-375:#54a8a5;
+    --mosque-400: #19e8d5;
+    --mosque-500: #01cbbc;
+    --mosque-550:#3b9c99;
+    --mosque-575:#238f8c;
+    --mosque-600: #00a49b;
+    --mosque-700: #03827c;
+    --mosque-800: #086966;
+    --mosque-900: #0c5552;
+    --mosque-950: #003334;
+  }
+
+.Header{    
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(19, 110, 110); */
+    background-attachment: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* @media(max-width:800px){
+    .Header{
+    }
+} */
+
+.navbar-list{
+    padding: 8px 0px;
+    background-color: #d6d5d541;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+    border-radius: 80px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    position: relative;
+    z-index: 10;
+    background: inherit;
+  }
+  
+  /* .navbar-list::before{
+    content: "";
+    position: absolute;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(20px);
+    margin: -5px;
+  } */
+  
+  .navbar-button{   
+    margin-inline: 10px ;
+    padding: 10px 20px;
+    border-radius: 80px;
+    border: none;    
+    background: linear-gradient(to right,
+        var(--mosque-500)
+        ,var(--mosque-700)
+    );
+    color: var(--mosque-950);
+  }
+  
+  .navbar-button:hover{
+    cursor: pointer;
+    background: linear-gradient(
+        var(--mosque-800)
+        ,var(--mosque-950)
+    );
+    color: var(--mosque-950);
+  }
+  
+
+  /* Cyan Colors
+--mosque-50: #eefffc;
+--mosque-100: #c6fff6;
+--mosque-200: #8effef;
+--mosque-300: #4dfbe5;
+--mosque-400: #19e8d5;
+--mosque-500: #01cbbc;
+--mosque-600: #00a49b;
+--mosque-700: #03827c;
+--mosque-800: #086966;
+--mosque-900: #0c5552;
+--mosque-950: #003334; */

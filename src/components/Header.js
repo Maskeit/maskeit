@@ -29,17 +29,14 @@ export const Header = () => {
 return (
   <div className="navbar-list">
     {
-      navItems.map(navItem =>{
-        // console.log(navItems);
-        return(
-          <React.Fragment key={navItem.Iam}>
-            <NavItem prop={navItem.Iam} />
-            <NavItem prop={navItem.AboutMe} />
-            <NavItem prop={navItem.Projects} />
-            <NavItem prop={navItem.Contact} />
-          </React.Fragment>
-        )
-      })
+      navItems.map((navItem) => (
+        <React.Fragment key={navItem.Iam}>
+          <NavItem label={navItem.Iam} targetSection="section-Yo" />
+          <NavItem label={navItem.AboutMe} targetSection="section-Sobre-mi" />
+          <NavItem label={navItem.Projects} targetSection="section-Proyectos" />
+          <NavItem label={navItem.Contact} targetSection="section-Contacto" />
+        </React.Fragment>
+      ))
     }
   </div>
 )
