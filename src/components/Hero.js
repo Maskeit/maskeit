@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useEffect, useState } from 'react'
 import myImage from '../images/yo.JPG';
 import {
   Navbar,
@@ -19,44 +19,34 @@ export const CircularImg = () => {
     );
 }
 
-export const CardHero  = () => {
+
+export const Letters  = () => {
+  // useEffect(()=>{
+  //   console.log("Has cargado el componente");
+  // },[]);
+
+  let letters = [
+    "Bienvenido",
+    "Mi nombre es Miguel"
+  ];
+
   return (
-    <div className="mx-auto max-w-screen-md py-12">
-    <Card className="mb-12 overflow-hidden">
-      <img
-        alt="nature"
-        className="h-[32rem] w-full object-cover object-center"
-        src="https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2717&q=80"
-      />
-    </Card>
-  </div>
+    <div className="main-letters"> 
+      <Typography variant='h1'>
+      <div className="rotating-text-wrapper">
+        <h2>{letters[1]}</h2>
+      </div>
+      </Typography>
+    </div>
   );
 }
 
 export const Hero = () => {
   return (
     <div className="hero">
-      <div className="name-img">
-      <div className="image-container">
-        {/* <div className="img-container">
-          <CircularImg />
-        </div> */}
+      <div className="name-img">      
+        <Letters/>
       </div>
-        <Typography variant="h5" color="blue">
-          Miguel Alejandre
-        </Typography>
-      </div>
-
-
-        <div className="information">
-          <Typography variant="h2" color="blue">
-            Forward-Thinking Software Developer | Innovator in Web, Desktop, Mobile and AI Solutions
-          </Typography>
-          <Typography variant="h5">
-            I am a software developer passionate about creating innovative and efficient solutions.
-            I have experience in the design and development of web and desktop applications, as well as the creation of 3D models.
-          </Typography>
-        </div>
     </div>
-  )
+  );
 }

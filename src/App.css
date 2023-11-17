@@ -4,7 +4,7 @@
 }
 
 .App-header {
-  background-color: #54a5d4;
+  background-color: #ffffff;
   min-height: 75vh;
   display: flex;
   flex-direction: column;
@@ -15,17 +15,22 @@
 }
 
 
-.navbar {
-  flex-wrap: wrap;
-  padding-right: 25px;
+.navbar-list{
+  padding: 10px 20px;
+  background-color: #bebebe57;
+  border-radius: 80px;
+  margin-top: 15px;
   display: flex;
-  justify-content: right;
-  min-height: 12vh;
+  justify-content: center;
   align-items: center;
-  background-color: #ffffff;
-  overflow: hidden;
 }
 
+.navbar-button{
+  margin-inline: 10px ;
+  padding: 10px 20px;
+  border-radius: 100px;
+  border: 1px solid;
+}
 
 .hero {
   display: flex;
@@ -38,15 +43,61 @@
 .name-img{
   display: center;
 }
-
-.image-container {
-  display: center;
-  /* flex-direction: column; */
+/***/
+.rotating-text-wrapper {
+  height: -50vh;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  max-width: 100%;
-  margin-bottom: 20px;
+  justify-content: center;
+  text-align: center
 }
 
+.rotating-text-wrapper h2 {
+  font-size: 2em;
+  margin: 0;
+  border-radius: 10px;
+  padding: 0.3em;
+  background: linear-gradient(to right, #bf31ee, #2e95da, rgb(11, 73, 115));
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0;
+}
+
+.rotating-text-wrapper h2:nth-child(1) {
+  background-color: transparent;
+  animation-name: rotating-text-1;
+  animation-duration: 4s;
+}
+
+@keyframes rotating-text-1 {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 800px) {
+  .rotating-text-wrapper {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .rotating-text-wrapper {
+    font-size: 1rem;
+  }
+}
+
+/**/
 .information {
   margin-top: 20px;
   text-align: center;
@@ -54,7 +105,7 @@
 
 @media (max-width: 800px) {
   .hero {
-    flex-direction: column;
+    flex-direction: start;
   }
 
   .content-container {
