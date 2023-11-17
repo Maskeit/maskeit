@@ -20,7 +20,21 @@
     --mosque-900: #0c5552;
     --mosque-950: #003334;
   }
+/*
+--azure-radiance-50: #f0f8fe;
+--azure-radiance-100: #dceffd;
+--azure-radiance-200: #c2e3fb;
+--azure-radiance-300: #97d3f9;
+--azure-radiance-400: #66baf4;
+--azure-radiance-500: #439cee;
+--azure-radiance-600: #3584e4;
+--azure-radiance-700: #256ad0;
+--azure-radiance-800: #2455a9;
+--azure-radiance-900: #224a86;
+--azure-radiance-950: #192e52;
 
+
+*/
 .Hero{
     display: grid;
     justify-content: center;

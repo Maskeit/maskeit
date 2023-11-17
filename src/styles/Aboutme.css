@@ -79,7 +79,8 @@ margin-top: 1em;
     padding: 5rem;
 }
 
-.scroll {
+.personal {
+    margin-top: 1em;
     height: 40em;
     background-image:url(../images/sky1.JPG);
     background-attachment: fixed;
@@ -88,6 +89,34 @@ margin-top: 1em;
     flex-direction: row;
     gap: 1.6em;
     border-radius: 10px;
+    margin-bottom: 4em;
+}
+
+.charlas {
+    margin-top: 4em;
+    height: 40em;
+    background-image:url(../images/xswing.PNG);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    flex-direction: row;
+    gap: 1.6em;
+    border-radius: 10px;
+    margin-bottom: 4em;
+
+}
+
+.blender {
+    margin-top: 4em;
+    height: 40em;
+    background-image:url(../images/ocean.PNG);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    flex-direction: row;
+    gap: 1.6em;
+    border-radius: 10px;
+    margin-bottom: 4em;
 }
 
 .content {

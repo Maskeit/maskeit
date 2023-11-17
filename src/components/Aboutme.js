@@ -12,7 +12,7 @@ import {
 
 export const Personal = () =>{
     return(
-        <div className="container scroll">
+        <div className="container personal">
             <div className="content">
                 <div className="img image-one"></div>
                 <div className="card">
@@ -32,7 +32,49 @@ export const Personal = () =>{
     );
 }
 
+export const Charlas = () =>{
+    return(
+        <div className="container charlas">
+            <div className="content">
+                <div className="img image-three"></div>
+                <div className="card">
+                    <h2>Inteligencia Artificial</h2>
+                    <p className="text">He dado multiples charlas sobre la inteligencia artificial, me gusta compartir conocimiento sobre nuevas tecnologias.</p>
+                </div>
+            </div>
 
+            <div className="content">
+                <div className="img image-four"></div>
+                <div className="card">
+                    <h2>Reconocimiento de imagenes</h2>
+                    <p className="text">Algunas de las tecnologias revolucionarias sobre el reconocimiento de imagenes</p>        
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export const Blender = () =>{
+    return(
+        <div className="container blender">
+            <div className="content">
+                <div className="img image-three"></div>
+                <div className="card">
+                    <h2>Modelado en 3D</h2>
+                    <p className="text">He dado multiples charlas sobre la inteligencia artificial, me gusta compartir conocimiento sobre nuevas tecnologias.</p>
+                </div>
+            </div>
+
+            <div className="content">
+                <div className="img image-four"></div>
+                <div className="card">
+                    <h2>Reconocimiento de imagenes</h2>
+                    <p className="text">Algunas de las tecnologias revolucionarias sobre el reconocimiento de imagenes</p>        
+                </div>
+            </div>
+        </div>
+    );
+}
 
 
 export const Aboutme = () => {
@@ -40,32 +82,60 @@ export const Aboutme = () => {
 
   return (
     <div>
-        <div className="container">
+        <div>        
             <Typography variant='h1'>
                 <div className="sobremi">
                     <h1>Un Poco Sobre Mi</h1>
                 </div>
             </Typography>
+            <div className="empty-space">
+                <p className="intro">
+                Soy un desarrollador de software apasionado 
+                por la creación de soluciones innovadoras y eficientes. 
+                Cuento con experiencia en el diseño y desarrollo de 
+                aplicaciones web y de escritorio, así como en la creación de 
+                modelos 3D.
+                </p>
+            </div>
+            <Personal/>
         </div>
 
-        <div className="empty-space">
-            <p className="intro">
-            Soy un desarrollador de software apasionado 
-            por la creación de soluciones innovadoras y eficientes. 
-            Cuento con experiencia en el diseño y desarrollo de 
-            aplicaciones web y de escritorio, así como en la creación de 
-            modelos 3D.
-            </p>
+        <div>
+            <Typography variant='h1'>
+                    <div className="sobremi">
+                        <h1>Charlas</h1>
+                    </div>
+            </Typography>
+            <div className="empty-space">
+                <p className="intro">
+                Soy un desarrollador de software apasionado 
+                por la creación de soluciones innovadoras y eficientes. 
+                Cuento con experiencia en el diseño y desarrollo de 
+                aplicaciones web y de escritorio, así como en la creación de 
+                modelos 3D.
+                </p>
+            </div>
+            <Charlas/>
         </div>
 
-
-        <Personal/>
-    
+        <div>
         <Typography variant='h1'>
-                <div className="sobremi">
-                    <h1>Mi Trabajo</h1>
-                </div>
-        </Typography>
+                    <div className="sobremi">
+                        <h1>Blender</h1>
+                    </div>
+            </Typography>
+            <div className="empty-space">
+                <p className="intro">
+                Soy un desarrollador de software apasionado 
+                por la creación de soluciones innovadoras y eficientes. 
+                Cuento con experiencia en el diseño y desarrollo de 
+                aplicaciones web y de escritorio, así como en la creación de 
+                modelos 3D.
+                </p>
+            </div>
+            <Blender/>
+
+        </div>
 
     </div>
     
