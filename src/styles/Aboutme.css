@@ -50,6 +50,7 @@
     justify-content: center;
     align-items: center;
     display: flex;
+    width: 120rem;
 }
   
 
@@ -80,6 +81,7 @@ margin-top: 1em;
 }
 
 .personal {
+
     margin-top: 1em;
     height: 40em;
     background-image:url(../images/sky1.JPG);
@@ -87,6 +89,7 @@ margin-top: 1em;
     background-size: cover;
     background-position: center;
     flex-direction: row;
+    
     gap: 1.6em;
     border-radius: 10px;
     margin-bottom: 4em;
@@ -95,7 +98,7 @@ margin-top: 1em;
 .charlas {
     margin-top: 4em;
     height: 40em;
-    background-image:url(../images/xswing.PNG);
+    background-image:url(../images/NN.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -103,7 +106,6 @@ margin-top: 1em;
     gap: 1.6em;
     border-radius: 10px;
     margin-bottom: 4em;
-
 }
 
 .blender {
@@ -119,60 +121,53 @@ margin-top: 1em;
     margin-bottom: 4em;
 }
 
-.content {
-display: flex;
-max-width: 360px;
-background-color: #fffaf2;
-flex-direction: column;
-align-items: center;
-border-radius: 0.5rem;
-background-color: #d6d5d541;
-backdrop-filter: blur(5px);
-box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+.card {
+    display: flex;
+    max-width: 30rem;
+    background-color: #fffaf2;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    background-color: #d6d5d541;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+    padding: 0.5rem;
 }
 
 .text {
-font-size: 1.2rem;
-padding: 0.3rem 0.8rem;
-}
-
-a {
-display: inline-block;
-padding: 0.6rem 1rem;
-background-color: #7d1c25;
-color: white;
-border-radius: 0.2rem;
-font-size: .8em;
-font-weight: bold;
-letter-spacing: .5px;
-text-decoration: none;
+    font-size: 1.2rem;
+    padding: 0.3rem 0.8rem;
 }
 
 .img {
-width: 18rem;
-height: 20rem;
-margin-top: 20px;
-border-radius: 0.3rem;;
-background-color: lightgrey;
-background-size: cover;
-background-position: center;
+    width: 18rem;
+    height: 20rem;
+    margin-top: 20px;
+    border-radius: 0.3rem;;
+    background-color: lightgrey;
+    background-size: cover;
+    background-position: center;
 }
 
 .image-one {
-background-image: url(../images/bass2.JPG);
+    background-image: url(../images/bass2.JPG);
 }
 
 .image-two {
-background-image: url(../images/tabasco.JPG);
+    background-image: url(../images/tabasco.JPG);
 }
 
-.card{
+.image-three {
+background-image: url(../images/charla22.JPG);
+}
+
+.content{
     width: 25rem;
     padding-bottom: 15px;
     
 }
 
-.card > a {
+.content > a {
     margin-bottom: 1.5rem;
 }
 

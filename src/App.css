@@ -51,31 +51,6 @@
     ,var(--azure-radiance-900)
     ,var(--azure-radiance-950)
   );
-  /* background: linear-gradient(#cee6e5
-  ,#b6dad9
-  ,#9dcdcc
-  ,#85c1bf
-  ,#6cb5b2
-  ,#54a8a5
-  ,#3b9c99
-  ,#238f8c
-   ); */
-
-
-  /* background: linear-gradient(217deg,
-  #3b9c99, #238f8c, #0a837f ,
-  #097672, #086966 ,#075c59
-  ,#064f4c
-  ,#054240
-  ,#043433
-  ,#032726)30.71%,
-  linear-gradient(127deg
-  ,#cee6e5
-  ,#b6dad9
-  ,#9dcdcc
-  ,#85c1bf
-  ,#6cb5b2
-  ,#54a8a5 ); */
 }
 
 main{
@@ -84,45 +59,6 @@ main{
   display: grid; */
   min-height: 100vh;
 }
-
-/*Colors UI CYAN*/
-/**
-#cee6e5
-#b6dad9
-#9dcdcc
-#85c1bf
-#6cb5b2
-#54a8a5
-
-#3b9c99
-#238f8c
-#0a837f
-#097672
-#086966
-#075c59
-
-#064f4c
-#054240
-#043433
-#032726
-#021a19
-#010d0d
-*/
-/* Cyan Colors
---mosque-50: #eefffc;
---mosque-100: #c6fff6;
---mosque-200: #8effef;
---mosque-300: #4dfbe5;
---mosque-400: #19e8d5;
---mosque-500: #01cbbc;
---mosque-600: #00a49b;
---mosque-700: #03827c;
---mosque-800: #086966;
---mosque-900: #0c5552;
---mosque-950: #003334; */
-
-
-
 
 
 

@@ -13,19 +13,19 @@ import {
 export const Personal = () =>{
     return(
         <div className="container personal">
-            <div className="content">
+            <div className="card">
                 <div className="img image-one"></div>
-                <div className="card">
-                    <h2>Gustos</h2>
-                    <p className="text">Me gusta tocar el bajo, a veces produzco mi propia musica.</p>
+                <div className="content">
+                    <h2>Modelado en 3D</h2>
+                    <p className="text">He dado multiples charlas sobre la inteligencia artificial, me gusta compartir conocimiento sobre nuevas tecnologias.</p>
                 </div>
             </div>
 
-            <div className="content">
+            <div className="card">
                 <div className="img image-two"></div>
-                <div className="card">
-                    <h2>Pasatiempos</h2>
-                    <p className="text">Me gusta hacer modelos en 3D en blender</p>        
+                <div className="content">
+                    <h2>Reconocimiento de imagenes</h2>
+                    <p className="text">Algunas de las tecnologias revolucionarias sobre el reconocimiento de imagenes</p>        
                 </div>
             </div>
         </div>
@@ -35,17 +35,17 @@ export const Personal = () =>{
 export const Charlas = () =>{
     return(
         <div className="container charlas">
-            <div className="content">
+            <div className="card">
                 <div className="img image-three"></div>
-                <div className="card">
-                    <h2>Inteligencia Artificial</h2>
+                <div className="content">
+                    <h2>Modelado en 3D</h2>
                     <p className="text">He dado multiples charlas sobre la inteligencia artificial, me gusta compartir conocimiento sobre nuevas tecnologias.</p>
                 </div>
             </div>
 
-            <div className="content">
+            <div className="card">
                 <div className="img image-four"></div>
-                <div className="card">
+                <div className="content">
                     <h2>Reconocimiento de imagenes</h2>
                     <p className="text">Algunas de las tecnologias revolucionarias sobre el reconocimiento de imagenes</p>        
                 </div>
@@ -57,17 +57,17 @@ export const Charlas = () =>{
 export const Blender = () =>{
     return(
         <div className="container blender">
-            <div className="content">
-                <div className="img image-three"></div>
-                <div className="card">
+            <div className="card">
+                <div className="img image-five"></div>
+                <div className="content">
                     <h2>Modelado en 3D</h2>
                     <p className="text">He dado multiples charlas sobre la inteligencia artificial, me gusta compartir conocimiento sobre nuevas tecnologias.</p>
                 </div>
             </div>
 
-            <div className="content">
-                <div className="img image-four"></div>
-                <div className="card">
+            <div className="card">
+                <div className="img image-six"></div>
+                <div className="content">
                     <h2>Reconocimiento de imagenes</h2>
                     <p className="text">Algunas de las tecnologias revolucionarias sobre el reconocimiento de imagenes</p>        
                 </div>
