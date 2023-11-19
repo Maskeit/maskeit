@@ -125,7 +125,6 @@ section:hover .pulser{
     display: grid;
     justify-content: center;
     align-items: center;
-    background-attachment: scroll;
 }
   
 .letters h2 {
@@ -148,17 +147,35 @@ section:hover .pulser{
   .letters h2:first-child {
     background-color: transparent;
     animation-name: letters-1;
-    animation-duration: 4s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
   }
   .letters h2:nth-child(2) {
     background-color: transparent;
-    animation-name: letters-1;
-    animation-duration: 4s;
+    animation-name: letters-2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;;
   }
   
   @keyframes letters-1 {
     0% {
-      transform: translateX(-300px);
+      transform: translateX(-500px);
+      opacity: 0;
+    }
+    33% {
+      opacity: 1;
+    }
+    66% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0);
+      /* opacity: 0; */
+    }
+  }
+  @keyframes letters-2 {
+    0% {
+      transform: translateY(500);
       opacity: 0;
     }
     33% {

@@ -20,13 +20,13 @@
     --mosque-900: #0c5552;
     --mosque-950: #003334;
   }
-
-.Hero{
+  .Aboutme{
     display: grid;
     justify-content: center;
     align-items: center;
     place-content: center;
     min-height: 95vh;
+    padding-top: 40px;
 }
 
 .sobremi {
@@ -46,6 +46,22 @@
     ,var(--mosque-900) );
     -webkit-background-clip: text;  
     color: transparent; /* Hacer el texto transparente para que se muestre el degradado de fondo */
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+}
+
+@keyframes reveal {
+    from{
+        opacity: 0;
+        translate: 0 50px;
+        scale: .5;
+    }
+    to{
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+    }
 }
 
 
@@ -153,6 +169,9 @@ margin-top: 1em;
     backdrop-filter: blur(5px);
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
     padding: 0.5rem;
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
 }
 
 .text {
@@ -171,7 +190,7 @@ margin-top: 1em;
 }
 
 .image-one {
-    background-image: url(../images/bass2.JPG);
+    background-image: url(../images/bass2.JPG);    
 }
 
 .image-two {

@@ -35,7 +35,7 @@ export const Letters  = () => {
       <Typography variant='h1'>
       <div className="letters">
         <h2>{letters[0]}</h2>
-      </div>
+        </div>
       </Typography>
     </div>
   );

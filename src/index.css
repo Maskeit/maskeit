@@ -37,6 +37,8 @@
   }
 
   body{
+    padding: 0 20px 0 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      
     background: linear-gradient(
         var(--azure-radiance-50)
@@ -51,4 +53,5 @@
         ,var(--azure-radiance-900)
         ,var(--azure-radiance-950)
       );
+
 }
