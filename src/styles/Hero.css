@@ -35,25 +35,100 @@
 
 
 */
+
+/*Curso transicion*/
+.pulser{
+  width: 30px;
+  height: 30px;
+  background-color: #03827c;
+  border-radius: 100%;
+  position: relative;
+  transition-duration: 100ms;
+  transition-timing-function:ease-in-out;
+  opacity:2;
+}
+
+.pulser::after{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(49, 65, 64);
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  animation: backPulse;
+  animation-duration: 6s;
+  animation-timing-function: ease;
+  animation-iteration-count: 3s;
+}
+@keyframes backPulse {
+  0%{
+    opacity: 0;
+  }
+  50%{
+    scale: 1.4;
+    opacity: 40%;
+  }
+}
+.pulser:first-child{
+  transition-delay: 0s;
+}
+
+.pulser:nth-child(2){
+  transition-delay: 300ms;
+}
+.pulser:nth-child(3){
+  transition-delay: 600ms;  
+}
+.pulser:hover{
+  animation-name: move;
+}
+section{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+section:hover .pulser{
+  opacity: 1;
+}
+
+
+
+@keyframes move {
+  from{
+    transform: translateY(0px);
+  }
+  to{
+    transform: translateY(50px);
+  }
+}
+
+
+
+/*Curso*/
+
+
 .Hero{
     display: grid;
     justify-content: center;
     align-items: center;
-    min-height: 89vh;
+    place-content: center;
+    min-height: 95vh;
 }
 
-.name-img{
-    display: center;
-}
   /***/
-.rotating-text-wrapper {
+.letters {
     display: grid;
     justify-content: center;
     align-items: center;
     background-attachment: scroll;
 }
   
-.rotating-text-wrapper h2 {
+.letters h2 {
     font-size: 2em;
     margin: 0;
     border-radius: 10px;
@@ -67,18 +142,23 @@
     ,var(--mosque-900) );
     -webkit-background-clip: text;
     color: transparent;
-    opacity: 0;
+    opacity: 1;
 }
   
-  .rotating-text-wrapper h2:nth-child(1) {
+  .letters h2:first-child {
     background-color: transparent;
-    animation-name: rotating-text-1;
+    animation-name: letters-1;
+    animation-duration: 4s;
+  }
+  .letters h2:nth-child(2) {
+    background-color: transparent;
+    animation-name: letters-1;
     animation-duration: 4s;
   }
   
-  @keyframes rotating-text-1 {
+  @keyframes letters-1 {
     0% {
-      transform: translateY(0);
+      transform: translateX(-300px);
       opacity: 0;
     }
     33% {
@@ -89,34 +169,40 @@
     }
     100% {
       transform: translateY(0);
+      /* opacity: 0; */
+    }
+  }
+
+
+  @keyframes presentation {
+    from {
       opacity: 0;
+      transform: translateY(100px);
     }
-  }
-  /* @media screen and (max-width: 800px) {
-    .rotating-text-wrapper {
-      font-size: 1.3rem;
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-  }
-  @media screen and (max-width: 576px) {
-    .rotating-text-wrapper {
-      font-size: 1rem;
-    }
-  }
-   */
-  /**/
-  .information {
-    margin-top: 20px;
-    text-align: center;
   }
   
-  @media (max-width: 800px) {
-    .hero {
-      flex-direction: start;
-    }
-  
-    .content-container {
-      align-items: center;
-      justify-content: center;
-    }
+  .presentation {
+    font-size: 2em;
+    margin: 0;
+    border-radius: 10px;
+    padding: 0.6em;
+    background: linear-gradient(to left, var(--mosque-300)
+    ,var(--mosque-550)
+    ,var(--mosque-575)
+    ,var(--mosque-600)
+    ,var(--mosque-700)
+    ,var(--mosque-800)
+    ,var(--mosque-900) );
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+    background-color: transparent;
+    position: relative;
+    opacity: 1;
+    animation: presentation 2s ease-in-out forwards;
   }
   

@@ -64,7 +64,20 @@
     position: relative;
     z-index: 10;
     background: inherit;
+}
+
+/* .navbar-alt-list{
+
+} */
+
+/* @media(max-width:768px){
+  .navbar-list{
+    display: none;
   }
+  .navbar-button{   
+    display: none;
+  }
+} */
   
   /* .navbar-list::before{
     content: "";
@@ -94,10 +107,9 @@
   .navbar-button:hover{
     cursor: pointer;
     background: linear-gradient(
-        var(--mosque-800)
-        ,var(--mosque-950)
+        var(--mosque-600)
+        ,var(--mosque-700)
     );
-    color: var(--mosque-950);
   }
   
 

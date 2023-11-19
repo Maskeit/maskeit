@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+:root{
+    --mosque-50: #eefffc;
+    --mosque-75:#b6dad9;
+    --mosque-80:#9dcdcc;
+    --mosque-100: #c6fff6;
+    --mosque-200: #8effef;
+    --mosque-250:#85c1bf;
+    --mosque-300: #4dfbe5;
+    --mosque-350:#6cb5b2;
+    --mosque-375:#54a8a5;
+    --mosque-400: #19e8d5;
+    --mosque-500: #01cbbc;
+    --mosque-550:#3b9c99;
+    --mosque-575:#238f8c;
+    --mosque-600: #00a49b;
+    --mosque-700: #03827c;
+    --mosque-800: #086966;
+    --mosque-900: #0c5552;
+    --mosque-950: #003334;
+  }
+  
+  :root{
+    --azure-radiance-50: #f0f8fe;
+    --azure-radiance-100: #dceffd;
+    --azure-radiance-200: #c2e3fb;
+    --azure-radiance-300: #97d3f9;
+    --azure-radiance-400: #66baf4;
+    --azure-radiance-500: #439cee;
+    --azure-radiance-600: #3584e4;
+    --azure-radiance-700: #256ad0;
+    --azure-radiance-800: #2455a9;
+    --azure-radiance-900: #224a86;
+    --azure-radiance-950: #192e52;
+  }
+
+  body{
+     
+    background: linear-gradient(
+        var(--azure-radiance-50)
+        ,var(--azure-radiance-100)
+        ,var(--azure-radiance-200)
+        ,var(--azure-radiance-300)
+        ,var(--azure-radiance-400)
+        ,var(--azure-radiance-500)
+        ,var(--azure-radiance-600)
+        ,var(--azure-radiance-700)
+        ,var(--azure-radiance-800)
+        ,var(--azure-radiance-900)
+        ,var(--azure-radiance-950)
+      );
+}

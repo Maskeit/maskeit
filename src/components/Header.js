@@ -7,6 +7,20 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 
+
+export function NavbarWithSearch() {
+  const [openNav, setOpenNav] = React.useState(false);
+ 
+  React.useEffect(() => {
+    window.addEventListener(
+      "resize",
+      () => window.innerWidth >= 960 && setOpenNav(false),
+    );
+  }, []);
+}
+
+
+
 export const Header = () => {
   //estados de react
   const [navItems, setNavItems] = useState([]);
@@ -26,20 +40,30 @@ export const Header = () => {
     getNavList();
   },[]);
 
+
+
+const AltHeader = () =>{
+  return(
+    <div>
+      
+    </div>
+  );
+}
 return (
   <div className="navbar-list">
     {
       navItems.map((navItem) => (
         <React.Fragment key={navItem.Iam}>
-          <NavItem label={navItem.Iam} targetSection="section-Yo" />
-          <NavItem label={navItem.AboutMe} targetSection="section-Sobre-mi" />
-          <NavItem label={navItem.Projects} targetSection="section-Proyectos" />
+          <NavItem label={navItem.Iam} targetSection="Hero" />
+          <NavItem label={navItem.AboutMe} targetSection="Aboutme" />
+          <NavItem label={navItem.Projects} targetSection="Projects" />
           <NavItem label={navItem.Contact} targetSection="section-Contacto" />
         </React.Fragment>
       ))
     }
   </div>
 )
+
 
 
 }

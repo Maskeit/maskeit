@@ -18,7 +18,7 @@ export const NavItem = ({label, targetSection}) => {
   };
   return (    
     <div>
-      <button className="navbar-button">
+      <button className="navbar-button" onClick={handleClick}>
         <span>{label}</span>    
       </button>
     </div>

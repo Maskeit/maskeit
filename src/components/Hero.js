@@ -21,9 +21,9 @@ export const CircularImg = () => {
 
 
 export const Letters  = () => {
-  // useEffect(()=>{
-  //   console.log("Has cargado el componente");
-  // },[]);
+  useEffect(()=>{
+    console.log("Has cargado el componente");
+  },[]);
 
   let letters = [
     "Bienvenido",
@@ -31,22 +31,35 @@ export const Letters  = () => {
   ];
 
   return (
-    <div className="main-letters"> 
+    <div> 
       <Typography variant='h1'>
-      <div className="rotating-text-wrapper">
-        <h2>{letters[1]}</h2>
+      <div className="letters">
+        <h2>{letters[0]}</h2>
       </div>
       </Typography>
     </div>
   );
 }
 
+export const Presentation = () =>{
+  return(
+
+    <div> 
+      <div className="presentation">
+        <p>Mi nombre es Miguel Alejandre,
+          soy Ingeniero de Software de profesion y 
+          este es mi portafolio web.
+        </p>
+      </div>
+    </div>
+  );
+}
+
 export const Hero = () => {
   return (
-    <div className="hero">
-      <div className="name-img">      
+    <div>
         <Letters/>
-      </div>
+        <Presentation/>
     </div>
   );
 }
