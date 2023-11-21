@@ -20,6 +20,8 @@
     --mosque-900: #0c5552;
     --mosque-950: #003334;
   }
+
+
 /*
 --azure-radiance-50: #f0f8fe;
 --azure-radiance-100: #dceffd;
@@ -126,19 +128,33 @@ section:hover .pulser{
     justify-content: center;
     align-items: center;
 }
+
+:root{
+  --black-50: #f6f6f6;
+  --black-100: #e7e7e7;
+  --black-200: #d1d1d1;
+  --black-300: #b0b0b0;
+  --black-400: #888888;
+  --black-500: #6d6d6d;
+  --black-600: #5d5d5d;
+  --black-700: #4f4f4f;
+  --black-800: #454545;
+  --black-900: #3d3d3d;
+  --black-950: #000000;
+
+}
   
 .letters h2 {
     font-size: 2em;
     margin: 0;
     border-radius: 10px;
     padding: 0.3em;
-    background: linear-gradient(to right, var(--mosque-300)
-    ,var(--mosque-550)
-    ,var(--mosque-575)
-    ,var(--mosque-600)
-    ,var(--mosque-700)
-    ,var(--mosque-800)
-    ,var(--mosque-900) );
+    background: linear-gradient(to left, 
+      
+      var(--black-400),
+      var(--black-300),
+      var(--black-50)
+    );
     -webkit-background-clip: text;
     color: transparent;
     opacity: 1;
@@ -207,13 +223,12 @@ section:hover .pulser{
     margin: 0;
     border-radius: 10px;
     padding: 0.6em;
-    background: linear-gradient(to left, var(--mosque-300)
-    ,var(--mosque-550)
-    ,var(--mosque-575)
-    ,var(--mosque-600)
-    ,var(--mosque-700)
-    ,var(--mosque-800)
-    ,var(--mosque-900) );
+    
+    background: linear-gradient(to left, 
+    var(--black-400),
+    var(--black-300),
+    var(--black-50)
+    );
     -webkit-background-clip: text;
     color: transparent;
     opacity: 1;

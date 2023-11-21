@@ -1,5 +1,4 @@
-/* Cyan Colors
- */
+
  :root{
     --mosque-50: #eefffc;
     --mosque-75:#b6dad9;
@@ -20,200 +19,49 @@
     --mosque-900: #0c5552;
     --mosque-950: #003334;
   }
-  .Aboutme{
+  .Aboutme{    
     display: grid;
+    border: 3px solid white;
+    border-radius: 20px;
+    width: 90%;
+    padding: 0;
+    gap: 60px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
     justify-content: center;
-    align-items: center;
-    place-content: center;
-    min-height: 95vh;
-    padding-top: 40px;
-}
-
-.sobremi {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-  
-.About-titles h1 {
-    font-size: 1em;
-    background: linear-gradient(to left,var(--mosque-300)
-    ,var(--mosque-550)
-    ,var(--mosque-575)
-    ,var(--mosque-600)
-    ,var(--mosque-700)
-    ,var(--mosque-800)
-    ,var(--mosque-900) );
-    -webkit-background-clip: text;  
-    color: transparent; /* Hacer el texto transparente para que se muestre el degradado de fondo */
-    animation: reveal linear both;
-    animation-timeline: view();
-    animation-range: entry 20% cover 30%;
-}
-
-@keyframes reveal {
-    from{
-        opacity: 0;
-        translate: 0 50px;
-        scale: .5;
-    }
-    to{
-        opacity: 1;
-        translate: 0 0;
-        scale: 1;
-    }
-}
-
-
-.charlas-container,
-.belnder-container,
-.personal-container{
-    display: grid;
     align-content: center;
-    align-items: center;
-    justify-content: center;
-}
-.container {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    width: 70rem;
-}  
-
-h2 {
-font-size: 1.6rem;
-font-weight: bold;
-margin-top: 1em;
 }
 
-.empty-space {
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.intro-container {
-    max-width: 70rem; /* Ajusta según sea necesario */
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-.intro {
-    font-size: 1.3em;
-    margin: 0;
-    background: linear-gradient(to left, var(--mosque-300)
-    ,var(--mosque-550)
-    ,var(--mosque-575)
-    ,var(--mosque-600)
-    ,var(--mosque-700)
-    ,var(--mosque-800)
-    ,var(--mosque-900) );
+  .about-h1 h1 {
+    font-size: 2em;
+    margin-top: 0;
+    border-radius: 10px;
+    padding: 0.3em;
+    background: linear-gradient(to left, 
+      
+      var(--black-400),
+      var(--black-300),
+      var(--black-50)
+    );
     -webkit-background-clip: text;
     color: transparent;
     opacity: 1;
-    background-color: transparent;
-}
-
-/**END OF SECTION*/
-.personal {
-    margin-top: 1em;
-    height: 40em;
-    background-image:url(../images/sky1.JPG);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    flex-direction: row;
-    
-    gap: 1.6em;
-    border-radius: 10px;
-    margin-bottom: 4em;
-}
-
-.charlas {
-    align-content: center;
-    margin-top: 4rem;
-    height: 40rem;
-    background-image:url(../images/NN.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    flex-direction: row;
-    gap: 1.6em;
-    border-radius: 10px;
-    margin-bottom: 4em;
-}
-
-.blender {
-    margin-top: 4em;
-    height: 40em;
-    background-image:url(../images/ocean.PNG);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-    flex-direction: row;
-    gap: 1.6em;
-    border-radius: 10px;
-    margin-bottom: 4em;
-}
-/**END OF SECTIONS*/
-.card {
-    display: flex;
-    max-width: 30rem;
-    background-color: #fffaf2;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 0.5rem;
-    background-color: #d6d5d541;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
-    padding: 0.5rem;
     animation: reveal linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 30%;
-}
+  }
 
-.text {
-    font-size: 1.2rem;
-    padding: 0.3rem 0.8rem;
-}
+  @keyframes reveal {
+    from{
+      opacity: 0;
+      translate: 0 50px;
+      scale: .5;
+  }
+  to{
+      opacity: 1;
+      translate: 0 0;
+      scale: 1;
 
-.img {
-    width: 18rem;
-    height: 20rem;
-    margin-top: 20px;
-    border-radius: 0.3rem;;
-    background-color: lightgrey;
-    background-size: cover;
-    background-position: center;
-}
-
-.image-one {
-    background-image: url(../images/bass2.JPG);    
-}
-
-.image-two {
-    background-image: url(../images/tabasco.JPG);
-}
-
-.image-three {
-background-image: url(../images/charla22.JPG);
-}
-
-.content{
-    width: 25rem;
-    padding-bottom: 15px;
-    
-}
-
-.content > a {
-    margin-bottom: 1.5rem;
-}
-
-
-.blank {
-    width: 100%;
-    min-height: 50vh;
-}
-
+  }
+  }
+  

@@ -1,29 +1,24 @@
 import "./App.css";
-import "./styles/Header.css";
-import "./styles/Hero.css";
-import "./styles/Aboutme.css";
-import "./styles/Projects.css";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Aboutme } from "./components/Aboutme";
 import { Projects } from "./components/Projects";
+import { useState } from "react";
+
+
 export const App = () => {
+
   return (
-    <div className="App">
-      <div className="Header">
-        <Header />
-      </div>
-      <main>
-        <section className="Hero" id="Hero">
-          <Hero />
+    <div className="App" >
+        <section className="Header">
+          <Header/>
         </section>
-        <section className="Aboutme" id="Aboutme">
-          <Aboutme />
+        <section id="Hero-id">
+          <Hero/>
         </section>
-        <section className="Projects" id="Projects">
-          <Projects />
+        <section id="Aboutme-id">
+          <Aboutme/>
         </section>
-      </main>
     </div>
   );
 };

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { NavItem } from './Items'
+import "../styles/Header.css";
+
 import {
   Navbar,
   MobileNav,
