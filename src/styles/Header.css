@@ -1,52 +1,7 @@
-/* Cyan Colors
- */
- :root{
-    --mosque-50: #eefffc;
-    --mosque-75:#b6dad9;
-    --mosque-80:#9dcdcc;
-    --mosque-100: #c6fff6;
-    --mosque-200: #8effef;
-    --mosque-250:#85c1bf;
-    --mosque-300: #4dfbe5;
-    --mosque-350:#6cb5b2;
-    --mosque-375:#54a8a5;
-    --mosque-400: #19e8d5;
-    --mosque-500: #01cbbc;
-    --mosque-550:#3b9c99;
-    --mosque-575:#238f8c;
-    --mosque-600: #00a49b;
-    --mosque-700: #03827c;
-    --mosque-800: #086966;
-    --mosque-900: #0c5552;
-    --mosque-950: #003334;
-  }
-  :root{
-    --azure-radiance-50: #f0f8fe;
-    --azure-radiance-100: #dceffd;
-    --azure-radiance-200: #c2e3fb;
-    --azure-radiance-300: #97d3f9;
-    --azure-radiance-400: #66baf4;
-    --azure-radiance-500: #439cee;
-    --azure-radiance-600: #3584e4;
-    --azure-radiance-700: #256ad0;
-    --azure-radiance-800: #2455a9;
-    --azure-radiance-900: #224a86;
-    --azure-radiance-950: #192e52;
-  }
-.Header{    
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    /* background-color: rgb(19, 110, 110); */
-    background-attachment: fixed;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    padding: 0;
-}
-
 .navbar-list{
-    padding: 8px 0px;
+    grid-column-start: 1;
+    grid-column-end:2 ;
+    padding: 12px 0px;
     background-color: #d6d5d541;
     backdrop-filter: blur(5px);
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
@@ -66,26 +21,11 @@
     padding: 10px 20px;
     border-radius: 22px;
     border: none;    
-    /* background: linear-gradient(
-        var(--azure-radiance-300)
-        ,var(--azure-radiance-500)
-    ); */
     background-color: #d6d5d593;
     backdrop-filter: blur(5px);
     color: var(--mosque-50);
-    opacity: 0px;
-   
+    opacity: 0px;   
   }
-  
-  /* .navbar-button:hover{
-    transition:  1s;
-    scale: 1.08;
-    cursor: pointer;
-    background: linear-gradient(
-        var(--mosque-600)
-        ,var(--mosque-700)
-    );
-  } */
 
   .navbar-list.visible {
     opacity: 1;
@@ -97,31 +37,4 @@
     opacity: 0;
     transform: translateY(-100%);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
-  
-
-
-  /*header alt*/
-  @keyframes adjust-info {
-    to {
-      grid-template-columns: 4em 1fr;
-      gap: 1rem;
-      height: 4.75rem;
-    }
-  }
-  @keyframes shrink-name {
-    to { font-size: 1.5rem; }
-  }
-  @keyframes add-shadow {
-    to { box-shadow: 0 5px 5px -3px rgba(0,0,0,.26); }
-  }
-  @keyframes move-button {
-    to { translate: 0% 40%; }
-  }
-  @keyframes move-and-fade-background {
-    to {
-      translate: 0% -5%;
-      scale: 0.96;
-      opacity: 0.3;
-    }
   }

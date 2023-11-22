@@ -9,25 +9,30 @@
         translate: 0 0;
     }
   }
+
+  .content-blender{
+    justify-content: stretch;
+    display: grid;
+    /* border: 3px solid aqua; */
+    gap: 16px;
+  }
   .columnas{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: 3px solid black;
+    grid-auto-rows: auto;
+    /* border: 3px solid black; */
+    justify-content: stretch;
     width: 100%;
     gap: 20px;
-    grid-auto-rows: auto;
-    justify-content: stretch;
-    height: 80vh;
   }
-
-img{
-    border-radius: 8px;
+  
+  .img-blender{    
     animation: revealBlender linear both;
     animation-timeline: view();
     animation-range: entry 20% cover 30%;
   }
 
-  @media (width < 768px) {
+  @media (width < 1000px) {
     .columnas{
       display: grid;
       grid-template-columns: 1fr;

@@ -1,0 +1,39 @@
+.Home{
+    justify-content: stretch;
+    justify-items: center;
+}
+
+
+.about-h1 h1 {
+    font-size: 2em;
+    margin-top: 0;
+    border-radius: 10px;
+    padding: 0.3em;
+    background: linear-gradient(to left, 
+      
+      var(--black-400),
+      var(--black-300),
+      var(--black-50)
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+}
+
+@keyframes reveal {
+    from{
+        opacity: 0;
+        translate: 0 50px;
+        scale: .5;
+    }
+    to{
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+
+    }
+}
+  

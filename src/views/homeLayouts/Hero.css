@@ -1,103 +1,37 @@
-/* Cyan Colors
- */
- :root{
-    --mosque-50: #eefffc;
-    --mosque-75:#b6dad9;
-    --mosque-80:#9dcdcc;
-    --mosque-100: #c6fff6;
-    --mosque-200: #8effef;
-    --mosque-250:#85c1bf;
-    --mosque-300: #4dfbe5;
-    --mosque-350:#6cb5b2;
-    --mosque-375:#54a8a5;
-    --mosque-400: #19e8d5;
-    --mosque-500: #01cbbc;
-    --mosque-550:#3b9c99;
-    --mosque-575:#238f8c;
-    --mosque-600: #00a49b;
-    --mosque-700: #03827c;
-    --mosque-800: #086966;
-    --mosque-900: #0c5552;
-    --mosque-950: #003334;
-  }
-
-
-/*
---azure-radiance-50: #f0f8fe;
---azure-radiance-100: #dceffd;
---azure-radiance-200: #c2e3fb;
---azure-radiance-300: #97d3f9;
---azure-radiance-400: #66baf4;
---azure-radiance-500: #439cee;
---azure-radiance-600: #3584e4;
---azure-radiance-700: #256ad0;
---azure-radiance-800: #2455a9;
---azure-radiance-900: #224a86;
---azure-radiance-950: #192e52;
-
-
-*/
-
 /*Curso transicion*/
 .pulser{
   width: 30px;
   height: 30px;
-  background-color: #03827c;
+  
   border-radius: 100%;
-  position: relative;
   transition-duration: 100ms;
   transition-timing-function:ease-in-out;
-  opacity:2;
+  opacity:1;
 }
-
-.pulser::after{
-  content:'';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(49, 65, 64);
-  border-radius: 50%;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  animation: backPulse;
-  animation-duration: 6s;
-  animation-timing-function: ease;
-  animation-iteration-count: 3s;
-}
-@keyframes backPulse {
-  0%{
-    opacity: 0;
-  }
-  50%{
-    scale: 1.4;
-    opacity: 40%;
-  }
-}
-.pulser:first-child{
+.pulser:nth-child(1){
+  background-color: var(--black-400);
   transition-delay: 0s;
 }
 
 .pulser:nth-child(2){
+  background-color: var(--black-500);
   transition-delay: 300ms;
 }
 .pulser:nth-child(3){
+  background-color: var(--black-600);
   transition-delay: 600ms;  
 }
-.pulser:hover{
-  animation-name: move;
-}
-section{
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  align-items: center;
-}
-section:hover .pulser{
-  opacity: 1;
+.pulser:nth-child(4){
+  background-color: var(--black-700);
+  transition-delay: 900ms;  
 }
 
+.pulser-group{
+  display: flex;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+  place-content: center;
+}
 
 
 @keyframes move {
@@ -112,8 +46,6 @@ section:hover .pulser{
 
 
 /*Curso*/
-
-
 .Hero{
     display: grid;
     justify-content: center;
@@ -122,7 +54,6 @@ section:hover .pulser{
     min-height: 95vh;
 }
 
-  /***/
 .letters {
     display: grid;
     justify-content: center;
@@ -144,7 +75,7 @@ section:hover .pulser{
 
 }
   
-.letters h2 {
+.letters h1 {
     font-size: 2em;
     margin: 0;
     border-radius: 10px;
@@ -158,6 +89,9 @@ section:hover .pulser{
     -webkit-background-clip: text;
     color: transparent;
     opacity: 1;
+    animation-name: letters-1;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
   
   .letters h2:first-child {

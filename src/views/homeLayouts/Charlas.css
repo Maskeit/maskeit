@@ -2,7 +2,7 @@
   @keyframes revealCharlas {
     from{
         opacity: 0;
-        transform: translateX(500px);
+        transform: translateX(200px);
         scale: .5;
     }
     to{

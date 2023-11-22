@@ -1,11 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-
+import { Titles } from '../../components/Titles';
 import myImage from '../../images/conf1.JPG';
 import myImage2 from '../../images/charla22.JPG'
 import './Charlas.css';
-import { Titles } from '../Aboutme';
-
 
 export const Charlas = () => {
   const Card = ({ prop }) => {
