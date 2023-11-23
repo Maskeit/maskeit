@@ -56,17 +56,17 @@ export const Header = () => {
   }, []);
 
 return (
-    <div className={`navbar-list ${visible ? 'visible' : 'hidden'}`}>
-        {
-          navItems.map((navItem) => (
-            <React.Fragment key={navItem.Iam}>
-              <NavItem label={navItem.Iam} targetSection="Hero-id" />
-              <NavItem label={navItem.AboutMe} targetSection="Aboutme-id" />
-              <NavItem label={navItem.Projects} targetSection="Projects" />
-              <NavItem label={navItem.Contact} targetSection="section-Contacto" />
-            </React.Fragment>
-          ))
-        }
+  <div className={`navbar-list ${visible ? 'visible' : 'hidden'}`}>
+      {
+        navItems.map((navItem) => (
+          <React.Fragment key={navItem.Iam}>
+            <NavItem label={navItem.Iam} targetSection="Hero-id" />
+            <NavItem label={navItem.AboutMe} targetSection="Aboutme-id" />
+            <NavItem label={navItem.Projects} targetSection="Projects" />
+            <NavItem label={navItem.Contact} targetSection="section-Contacto" />
+          </React.Fragment>
+        ))
+      }
   </div>
 
   );

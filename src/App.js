@@ -6,7 +6,9 @@ import { Footer} from "./components/Footer";
 export const App = () => {
   return (
     <div className="App">
+      <div id="Hero-id">
         <Header/>
+      </div>
         <Home/>
        {/* 
         <Footer/> */}

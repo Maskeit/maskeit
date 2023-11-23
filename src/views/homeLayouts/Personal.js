@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React from "react";
 //import { motion } from "framer-motion";
 import myImage from "../../images/yo.JPG";
 import "./Personal.css";

@@ -9,7 +9,7 @@ export const Home = () => {
     <div className="Home">
         <Hero />
         <Personal/>
-
+        <Charlas/>
     </div>
   );
 };

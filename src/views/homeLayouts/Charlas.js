@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+
 import { Titles } from '../../components/Titles';
 import myImage from '../../images/conf1.JPG';
 import myImage2 from '../../images/charla22.JPG'
@@ -38,14 +38,14 @@ export const Charlas = () => {
 
   const label = 'Conferencias';
   return (
-    <div>
-      <Titles prop={label} />
-      <div className="content-charlas">
-        <div className="card-conferencias">
-          <Card prop={info1} />
-          <Card prop={info2} />
-          <Card prop={info3} />
-        </div>
+    <div className="Charlas">
+      <div className="letters-charlas">
+        <Titles prop={label} />
+      </div>
+      <div className="card-conferencias">
+        <Card prop={info1} />
+        <Card prop={info2} />
+        <Card prop={info3} />
       </div>
     </div>
   );
