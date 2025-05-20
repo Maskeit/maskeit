@@ -1,9 +1,17 @@
 # 👋 Hi there, I am Miguel Alejandre
 ## Software Engineer
-Welcome to my page!
-I'm Miguel, Fullstack developer from Mexico, passionate about creating innovative and efficient solutions. I have experience in the design and development of web and desktop applications, as well as the creation of 3D models.
+Welcome to my GitHub!
+I’m Miguel — an AI Fullstack Developer from Mexico, passionate about building innovative, efficient, and scalable tech solutions.
 
-🤓 Now I am learning ReactJs and AstroJs.
+Currently, I work as an AI Engineer (👨‍💻) where I develop custom WordPress websites, design automation workflows for businesses, and integrate vector databases for intelligent data processing.
+
+My experience spans across:
+	•	Web and desktop application development
+	•	Computer vision and image recognition using AI
+	•	Data science, big data handling, and analysis
+	•	IoT-based smart applications
+
+Always learning. Always building.
 
 
 ### 🎯 Some technologies I use
